@@ -19,7 +19,7 @@ sentry-sdk = {extras = ["fastapi"], version = "^1.30.0"}
 
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^3.3.2"
+pre-commit = "^3.4.0"
 
 [build-system]
 requires = ["poetry-core"]
