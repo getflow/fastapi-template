@@ -7,15 +7,16 @@ readme = "README.md"
 packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 fastapi = "^0.103.1"
-uvicorn = "^0.23.2"
 sqlmodel = "^0.0.8"
 asyncpg = "^0.28.0"
 psycopg2 = "^2.9.6"
 httpx = "^0.25.0"
 alembic = "^1.12.0"
 sentry-sdk = {extras = ["fastapi"], version = "^1.30.0"}
+gunicorn = "^21.2.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
 
 
 [tool.poetry.group.dev.dependencies]
