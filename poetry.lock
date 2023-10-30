@@ -567,6 +567,8 @@ files = [
     {file = "psycopg2-2.9.9-cp310-cp310-win_amd64.whl", hash = "sha256:426f9f29bde126913a20a96ff8ce7d73fd8a216cfb323b1f04da402d452853c3"},
     {file = "psycopg2-2.9.9-cp311-cp311-win32.whl", hash = "sha256:ade01303ccf7ae12c356a5e10911c9e1c51136003a9a1d92f7aa9d010fb98372"},
     {file = "psycopg2-2.9.9-cp311-cp311-win_amd64.whl", hash = "sha256:121081ea2e76729acfb0673ff33755e8703d45e926e416cb59bae3a86c6a4981"},
+    {file = "psycopg2-2.9.9-cp312-cp312-win32.whl", hash = "sha256:d735786acc7dd25815e89cc4ad529a43af779db2e25aa7c626de864127e5a024"},
+    {file = "psycopg2-2.9.9-cp312-cp312-win_amd64.whl", hash = "sha256:a7653d00b732afb6fc597e29c50ad28087dcb4fbfb28e86092277a559ae4e693"},
     {file = "psycopg2-2.9.9-cp37-cp37m-win32.whl", hash = "sha256:5e0d98cade4f0e0304d7d6f25bbfbc5bd186e07b38eac65379309c4ca3193efa"},
     {file = "psycopg2-2.9.9-cp37-cp37m-win_amd64.whl", hash = "sha256:7e2dacf8b009a1c1e843b5213a87f7c544b2b042476ed7755be813eaf4e8347a"},
     {file = "psycopg2-2.9.9-cp38-cp38-win32.whl", hash = "sha256:ff432630e510709564c01dafdbe996cb552e0b9f3f065eb89bdce5bd31fabf4c"},
@@ -864,18 +866,18 @@ typing-extensions = ">=3.7.4"
 
 [[package]]
 name = "sqlmodel"
-version = "0.0.8"
+version = "0.0.11"
 description = "SQLModel, SQL databases in Python, designed for simplicity, compatibility, and robustness."
 optional = false
-python-versions = ">=3.6.1,<4.0.0"
+python-versions = ">=3.7,<4.0"
 files = [
-    {file = "sqlmodel-0.0.8-py3-none-any.whl", hash = "sha256:0fd805719e0c5d4f22be32eb3ffc856eca3f7f20e8c7aa3e117ad91684b518ee"},
-    {file = "sqlmodel-0.0.8.tar.gz", hash = "sha256:3371b4d1ad59d2ffd0c530582c2140b6c06b090b32af9b9c6412986d7b117036"},
+    {file = "sqlmodel-0.0.11-py3-none-any.whl", hash = "sha256:bc0d64c4b901d919d2f16bbd79aefb07cb268c29f7c1dd83a84758772ccc95c6"},
+    {file = "sqlmodel-0.0.11.tar.gz", hash = "sha256:fc33abbf7ec29caafabe3d0e1db61e33597857a289e5fd1ecdb91be702b26084"},
 ]
 
 [package.dependencies]
-pydantic = ">=1.8.2,<2.0.0"
-SQLAlchemy = ">=1.4.17,<=1.4.41"
+pydantic = ">=1.9.0,<2.0.0"
+SQLAlchemy = ">=1.4.36,<2.0.0"
 sqlalchemy2-stubs = "*"
 
 [[package]]
@@ -1128,4 +1130,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "59abea984407e3740cdfb36c7cd9086d1f3c7740191cfeac3936143472f7b72b"
+content-hash = "36a64e1c27abfdcce26de66d9751c054de69677b220ad4942b99205cff148271"
