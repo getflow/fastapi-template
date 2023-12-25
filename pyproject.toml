@@ -16,7 +16,7 @@ httpx = "^0.25.2"
 alembic = "^1.13.0"
 sentry-sdk = {extras = ["fastapi"], version = "^1.38.0"}
 gunicorn = "^21.2.0"
-uvicorn = {extras = ["standard"], version = "^0.24.0"}
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
 
 
 [tool.poetry.group.dev.dependencies]
