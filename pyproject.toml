@@ -14,7 +14,7 @@ asyncpg = "^0.29.0"
 psycopg2 = "^2.9.9"
 httpx = "^0.27.0"
 alembic = "^1.13.1"
-sentry-sdk = {extras = ["fastapi"], version = "^1.43.0"}
+sentry-sdk = {extras = ["fastapi"], version = "^2.0.1"}
 gunicorn = "^21.2.0"
 uvicorn = {extras = ["standard"], version = "^0.28.0"}
 
