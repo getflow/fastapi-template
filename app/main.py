@@ -1,5 +1,6 @@
 import sentry_sdk
 from fastapi import FastAPI
+from prometheus_fastapi_instrumentator import Instrumentator
 
 from app.routers.api import api_router
 from app.settings import SENTRY_DSN, SENTRY_ENVIRONMENT
@@ -16,3 +17,8 @@ sentry_sdk.init(
 app = FastAPI(title="FastAPI template", version="0.1.0")
 
 app.include_router(router=api_router, prefix="")
+
+# adds prometheus metrics route
+Instrumentator().instrument(app).expose(
+    app, endpoint="/metrics", include_in_schema=False
+)
