@@ -21,7 +21,7 @@ app.include_router(router=api_router, prefix="")
 
 # adds prometheus metrics route
 Instrumentator().instrument(app).expose(
-    app, endpoint="/metrics", include_in_schema=False
+    app, endpoint="/prometheus/metrics", include_in_schema=False
 )
 
 
