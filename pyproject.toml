@@ -9,7 +9,7 @@ packages = [{include = "app"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.120.0"
-sqlmodel = "^0.0.24"
+sqlmodel = "^0.0.30"
 asyncpg = "^0.30.0"
 psycopg2 = "^2.9.11"
 httpx = "^0.28.1"
