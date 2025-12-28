@@ -1,4 +1,4 @@
-FROM getflow/python-poetry:stable-python3.11
+FROM getflow/python-poetry:stable-python3.11+
 LABEL authors="rh@getflow.tech"
 
 COPY pyproject.toml poetry.lock README.md ./
