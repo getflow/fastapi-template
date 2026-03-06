@@ -1,10 +1,10 @@
-FROM getflow/python-poetry:stable-python3.11
+FROM getflow/python-poetry:2.3-python3.11-alpine
 LABEL authors="rh@getflow.tech"
 
 COPY pyproject.toml poetry.lock README.md ./
 COPY app ./app
 
-RUN poetry config virtualenvs.create false && poetry install --no-dev --no-interaction --no-ansi
+RUN poetry config virtualenvs.create false && poetry install --without dev --no-interaction --no-ansi
 
 WORKDIR /app
 

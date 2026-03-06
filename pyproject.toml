@@ -1,29 +1,33 @@
-[tool.poetry]
+[project]
 name = "fastapi-template"
 version = "0.1.0"
 description = "FastAPI production template"
-authors = ["kartaris <rh@getflow.tech>"]
+authors = [
+    {name = "rh",email = "rh@getflow.tech"}
+]
 readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "fastapi (>=0.135.1,<0.136.0)",
+    "sqlmodel (>=0.0.37,<0.0.38)",
+    "asyncpg (>=0.31.0,<0.32.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "alembic (>=1.18.4,<2.0.0)",
+    "uvicorn (>=0.41.0,<0.42.0)",
+    "gunicorn (>=25.1.0,<26.0.0)",
+    "prometheus-fastapi-instrumentator (>=7.1.0,<8.0.0)",
+    "pyctuator (>=1.2.0,<2.0.0)",
+    "sentry-sdk[fastapi] (>=2.54.0,<3.0.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)"
+]
+
+[tool.poetry]
 packages = [{include = "app"}]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-fastapi = "^0.128.0"
-sqlmodel = "^0.0.31"
-asyncpg = "^0.31.0"
-psycopg2 = "^2.9.11"
-httpx = "^0.28.1"
-alembic = "^1.18.4"
-sentry-sdk = {extras = ["fastapi"], version = "^2.54.0"}
-gunicorn = "^23.0.0"
-uvicorn = {extras = ["standard"], version = "^0.40.0"}
-prometheus-fastapi-instrumentator = "^7.1.0"
-pyctuator = "^1.2.0"
 
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.5.1"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
