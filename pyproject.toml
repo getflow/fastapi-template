@@ -13,7 +13,7 @@ sqlmodel = "^0.0.31"
 asyncpg = "^0.31.0"
 psycopg2 = "^2.9.11"
 httpx = "^0.28.1"
-alembic = "^1.17.2"
+alembic = "^1.18.4"
 sentry-sdk = {extras = ["fastapi"], version = "^2.48.0"}
 gunicorn = "^23.0.0"
 uvicorn = {extras = ["standard"], version = "^0.40.0"}
