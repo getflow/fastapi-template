@@ -18,7 +18,7 @@ dependencies = [
     "prometheus-fastapi-instrumentator (>=7.1.0,<8.0.0)",
     "pyctuator (>=1.2.0,<2.0.0)",
     "sentry-sdk[fastapi] (>=2.54.0,<3.0.0)",
-    "psycopg2-binary (>=2.9.11,<3.0.0)"
+    "psycopg2-binary (>=2.9.12,<3.0.0)"
 ]
 
 [tool.poetry]
