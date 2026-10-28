@@ -975,14 +975,14 @@ files = [
 
 [[package]]
 name = "sentry-sdk"
-version = "2.68.1"
+version = "2.73.0"
 description = "Python client for Sentry (https://sentry.io)"
 optional = false
 python-versions = ">=3.6"
 groups = ["main"]
 files = [
-    {file = "sentry_sdk-2.68.1-py3-none-any.whl", hash = "sha256:775b78871783a0ffd758276ad01b3bb2b1ebcdad8f9d2f0a7723f76b73c99b65"},
-    {file = "sentry_sdk-2.68.1.tar.gz", hash = "sha256:6a97895230b04bc35d4d8d2e51e3b9e21902dfb0086ccf1f131a80c15c7b997a"},
+    {file = "sentry_sdk-2.73.0-py3-none-any.whl", hash = "sha256:0bcfa6928ea5adbb89591858b514d27adac27c7a3cccc31b20ed10e0b09eda9e"},
+    {file = "sentry_sdk-2.73.0.tar.gz", hash = "sha256:4a2ab97b16e4693c325ab361c7bbbb346dbc7d0bc0150922d795a25bac8d5280"},
 ]
 
 [package.dependencies]
@@ -1015,7 +1015,7 @@ huggingface-hub = ["huggingface_hub (>=0.22)"]
 langchain = ["langchain (>=0.0.210)"]
 langgraph = ["langgraph (>=0.6.6)"]
 launchdarkly = ["launchdarkly-server-sdk (>=9.8.0)"]
-litellm = ["litellm (>=1.77.5,!=1.82.7,!=1.82.8)"]
+litellm = ["litellm (>=1.77.5,!=1.82.7,!=1.82.8,!=1.107.0)"]
 litestar = ["litestar (>=2.0.0)"]
 loguru = ["loguru (>=0.5)"]
 mcp = ["mcp (>=1.15.0)"]
@@ -1261,4 +1261,4 @@ python-discovery = ">=1.6.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4.0"
-content-hash = "19aa0c99973239e9f63b0328609f88f08cc73bb2ea62089415c738ac29fe06f1"
+content-hash = "6ad5d5009ae98048cfe646e19c9f69c5ee10abc9c07cc510995998be982e4749"
